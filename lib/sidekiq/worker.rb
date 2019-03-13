@@ -116,6 +116,8 @@ module Sidekiq
       #   queue - use a named queue for this Worker, default 'default'
       #   retry - enable the RetryJobs middleware for this Worker, *true* to use the default
       #      or *Integer* count
+      #   dead - set to *false* to discard jobs (instead of sending them to the Dead queue) after
+      #      retries are exhausted
       #   backtrace - whether to save any error backtrace in the retry payload to display in web UI,
       #      can be true, false or an integer number of lines to save, default *false*
       #   pool - use the given Redis connection pool to push this type of job to a given shard.
