@@ -6,6 +6,7 @@ Gem::Specification.new do |gem|
   gem.summary = "Simple, efficient background processing for Ruby"
   gem.description = "Simple, efficient background processing for Ruby."
   gem.homepage = "http://sidekiq.org"
+  gem.metadata["changelog_uri"] = "https://github.com/mperham/sidekiq/blob/master/Changes.md"
   gem.license = "LGPL-3.0"
 
   gem.executables = ["sidekiq", "sidekiqmon"]
